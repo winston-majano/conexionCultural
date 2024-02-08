@@ -1,0 +1,23 @@
+        body {
+            background-color: #7FBC90
+            ;
+        }
+
+        .signup-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 50px;
+            border: 1px solid #ddd;
+            background-color: #7FBC90;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        .signup-btn {
+            margin-top: 20px;
+        }
