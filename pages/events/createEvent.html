@@ -11,33 +11,38 @@
         <form class="container text-center p-2">
             <h2>Crear Evento</h2>
             <section class="row align-items-center justify-content-lg-center">
-                <article class="col-8">
-                    <label for="title">Titulo:</label>
-                    <input class="" name="title">
+                <article class="col-6">
+                    <section class="form-floating">
+                        <input class="form-control" name="title">
+                        <label for="title">Titulo:</label>
+                    </section>
                 </article>
-                <article class="col-8">
+                <article class="col-6">
                     <label for="description">Descripcion:</label>
-                    <input class="" name="description">
+                    <input class="form-control" name="description">
                 </article>
-                <article class="col-8">
+                <article class="col-6">
                     <label for="day">Dia de celebración:</label>
-                    <input type="datetime-local" class="" name="day">
+                    <input type="datetime-local" class="form-control" name="day">
                 </article>
-                <article class="col-8">
+                <article class="col-6">
                     <label for="address">Dirrección:</label>
-                    <input class="" name="address">
+                    <input class="form-control" name="address">
                 </article>
-                <article class="col-8">
+                <article class="col-6">
                     <label for="banner">Imagen Principal</label>
-                    <input type="file" name="banner">
+                    <input type="file" name="banner" class="form-control">
                 </article>
-                <article class="col-8">
-                    <select name="categoryId">
-                        <option value="#">Seleccione la categoria:</option>
-                    </select>
+                <article class="col-6">
+                    <section class="form-floating">
+                        <select id="categories" name="categories" class="form-select">
+                        </select>
+                        <label name="categories">Seleccione la categoria:</label>
+                    </section>
                 </article>
             </section>
         </form>
     </main>
+    <script type="module" src="./useCreateEvent.js"></script>
 </body>
 </html>

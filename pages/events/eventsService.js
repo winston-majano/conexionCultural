@@ -1,4 +1,4 @@
-import { API_URL } from '../../js/constants'
+import { API_URL } from '../../js/constants.mjs'
 
 export async function getEvents() {
   try {

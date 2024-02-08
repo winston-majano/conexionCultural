@@ -1,6 +1,6 @@
-import { API_URL } from '../../js/constants'
+import { API_URL } from '../../js/constants.mjs'
 
-export async function getEvents() {
+export async function getCategories() {
   try {
     const res = await fetch(API_URL + '/categories')
 
