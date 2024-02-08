@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Login</title>
     <style>
         body {
@@ -24,8 +25,9 @@
 
         h1 {
             text-align: center;
-            color: #007bff;
+            color: #000000;
         }
+        h5 {text-align: center;}
 
         .forgot-password {
             text-align: right;
@@ -38,7 +40,7 @@
         }
 
         .google-login {
-            margin-top: 15px;
+            text-align: center;
         }
 
     </style>
@@ -48,6 +50,7 @@
             <div class="container">
                 <div class="login-container">
                     <h1>Login</h1>
+                    <h5>please sign in to login</h5>
                     <form>
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
@@ -61,10 +64,12 @@
                         <button type="submit" class="btn btn-primary login-btn">Login</button>
                         <a href="#" class="btn btn-secondary login-btn">Registro</a>
                         <div class="google-login">
-                            <button type="button" class="btn btn-light"><img src="google-icon.png" alt="Google Icon" width="20"> Login with Google</button>
+                            <button type="button" class="btn btn-light"><img src="../assets/img/google-icon.png" alt="Google Icon" width="20"> Login with Google</button>
                         </div>
                     </form>
                 </div>
             </div>
+            <script src="../js/bootstrap.min.js">
+            </script>
     </body>
 </html>
