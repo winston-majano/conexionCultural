@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login/login.css">
+    <title>Login</title>
 </head>
-    
-</body>
+    <body>
+        <body>
+            <div class="container">
+                <div class="login-container">
+                    <h1>Login</h1>
+                    <h5>please sign in to login</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                            <div class="forgot-password"><a href="#">Forgot password?</a></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary login-btn">Login</button>
+                        <a href="#" class="btn btn-secondary login-btn">Registro</a>
+                        <div class="google-login">
+                            <button type="button" class="btn btn-light"><img src="../assets/img/google-icon.png" alt="Google Icon" width="20"> Login with Google</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="../js/bootstrap.min.js">
+            </script>
+    </body>
 </html>
