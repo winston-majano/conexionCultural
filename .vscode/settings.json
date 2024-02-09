@@ -1,4 +1,5 @@
 {
   "editor.tabSize": 4,
   "files.eol": "\r\n",
+  "liveServer.settings.port": 5501,
 }
