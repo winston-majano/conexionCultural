@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/dashboard/dashboard.css">
+    <title>DashBoard</title>
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <div class="row min-vh-100 flex-column flex-md-row ">
+            <aside class="col-12 col-xs-4 col-md-3 col-lg-3 col-lx-2 p-0 flex-shrink-1  bg-dark">
+                <nav class="navbar navbar-dark bg-dark navbar-expand-md  flex-md-column flex-row aling-items-center py-2 text-center stiky-top"
+                    id="sidebar">
+
+                    <a class="navbar-brand  font-weight-bold text-nowrap" href="">Conexion Cultural</a>
+                    <img class="imgPrincipal  img-fluid  d-none d-md-block shadow  my-5" src="../../assets/img/user.png"
+                        alt="Winston Majano">
+
+                    <button class="navbar-toggler  border-0 order-1 px-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#nave" aria-controls="nave" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="nave">
+                        <ul class="navbar-nav flex-column w-100 justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cuenta.html">Cuenta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/misEventos.html">Mis Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/wallet.html">Wallet</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="nav justify-content-center mt-5 d-none d-md-flex order-last">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-brands fa-twitter fa-lg fs-1"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <i class="fa-brands fa-facebook fa-lg fs-1"></i> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fa-brands fa-square-instagram fa-lg fs-1"></i></a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+            </aside>
+            <main class="col px-0 flex-grow-1 ">
+                <div class="conten-dashboard  mx-4 py-3 ">
+
+                    <article>
+                        <h1 class="font-weight-light">Aqui se mostraran el listado de eventos</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem recusandae itaque esse
+                            incidunt voluptatem omnis? Ipsum unde accusamus tempore earum illo, quisquam quam
+                            aperiam ab, odio molestias quasi illum eos!</p>
+                    </article>
+
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa-solid fa-user"></i>
+                        Contacto
+                    </button>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+
+    <script src="../../js/bootstrap.js"></script>
 </body>
+
 </html>
