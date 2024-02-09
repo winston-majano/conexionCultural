@@ -1,6 +1,5 @@
         body {
-            background-color: #7FBC90
-            ;
+            background: linear-gradient(#FFBE98, #BCB4FF);
         }
 
         .signup-container {
