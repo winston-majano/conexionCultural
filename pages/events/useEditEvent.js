@@ -3,7 +3,8 @@ import { getCategories } from '../categories/categoriesService.js'
 function showCategories() {
   const categoriesTag = document.getElementById('categories')
   getCategories().then((categories) => {
-    const fragment = document.createDocumentFragment()
+   // const fragment = document.createDocumentFragment()
+   const fragment = new DocumentFragment();
     for (const category of categories) {
       const categoryTag = document.createElement('option')
       categoryTag.value = category.name

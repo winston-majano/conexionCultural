@@ -20,31 +20,31 @@
                     id="sidebar">
 
                     <a class="navbar-brand  font-weight-bold text-nowrap" href="./main.html">Conexion Cultural</a>
-                    <img class="imgPrincipal  img-fluid  d-none d-md-block shadow  my-5" src="../../assets/img/user.png"
+                    <img class="imgPrincipal  img-fluid  d-none d-md-block shadow  my-5" src="../../assets/usuario.png"
                         alt="Winston Majano">
 
-                    <button class="navbar-toggler  border-0 order-1 px-1" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#nave" aria-controls="nave" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler   px-1" type="button" data-bs-toggle="collapse" data-bs-target="#nave"
+                        aria-controls="nave" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="nave">
                         <ul class="navbar-nav flex-column w-100 justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link active" href="./main.html">Inicio</a>
+                                <a class="nav-link active" href="#" onclick="show(1)">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="account.html">Cuenta</a>
+                                <a class="nav-link" href="#" onclick="show(2)">Cuenta</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link " href="#" onclick="show(3)">Mis Eventos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="/misEventos.html">Mis Eventos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="/wallet.html">Wallet</a>
+                                <a class="nav-link " href="#" onclick="show(4)">Wallet</a>
                             </li>
 
                         </ul>
+
                     </div>
                     <ul class="nav justify-content-center mt-5 d-none d-md-flex order-last">
                         <li class="nav-item">
@@ -66,28 +66,97 @@
 
 
             </aside>
-            <main class="col px-0 flex-grow-1 ">
-                <div id="conten-dashboard"  class=" mx-4 py-3 ">
+            <!--Fin del Menu -->
 
-                    <article>
-                        <h1 class="font-weight-light">Aqui se mostraran el listado de eventos</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem recusandae itaque esse
-                            incidunt voluptatem omnis? Ipsum unde accusamus tempore earum illo, quisquam quam
-                            aperiam ab, odio molestias quasi illum eos!</p>
-                    </article>
+            <main id="mainContent" class="col px-0 flex-grow-1 ">
 
-                    <button type="button" class="btn btn-primary">
-                        <i class="fa-solid fa-user"></i>
-                        Contacto
-                    </button>
+
+                <!--Inicio de contenido principal-->
+                <div id="eventsContent" class="row my-3 mx-5">
+                    <div class="col-12 col-md-8 col-lg-8 col-xl-8">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar Evento"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+
+                    <!--listado de eventos-->
+                    
+
+                </div>
+
+                <!--Inicio de cuenta de usuaio-->
+                <div id="accauntContent">
+
+                    <div class="row px-5 justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-10 my-5 mb-4 text-center">
+                            <img class="img-fluid imgPrincipal" src="../../assets/usuario.png" alt="Imagen usuario">
+                        </div>
+
+                        <form>
+                            <div class="col-12 col-md-12 col-lg-12 mb-3">
+                                <div class="row">
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="firstName" class="form-label">Nombre:</label>
+                                        <input type="text" class="form-control" id="firstName"
+                                            placeholder="Ingrese su nombre">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="lastName" class="form-label">Apellido:</label>
+                                        <input type="text" class="form-control" id="lastName"
+                                            placeholder="Ingrese su apellido">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="nickname" class="form-label">Nickname:</label>
+                                        <input type="text" class="form-control" id="nickname"
+                                            placeholder="Ingrese su nickname">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="email" class="form-label">E-mail:</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Ingrese su e-mail">
+                                    </div>
+
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="password" class="form-label">Contraseña:</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Ingrese su contraseña">
+                                    </div>
+                                    
+                                </div>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+
+                            </div>
+
+
+                           
+                        </form>
+
+
+                    </div>
+                </div>
+                <!--Fin cuenta de usuario -->
+
+                <!--Inicio de mis Eventos-->
+                <div id="myEventeContent" class="row    mx-4 py-3 ">
+                    <h1>mis eventos</h1>
+                </div>
+                <!--Inicio de mi cartera-->
+                <div id="myWalletContent" class="row    mx-4 py-3 ">
+                    <h1>mi wallet</h1>
                 </div>
 
             </main>
+
+
+
         </div>
     </div>
 
 
     <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/dashboard/mainDashboard.js"></script>
 </body>
 
 </html>
