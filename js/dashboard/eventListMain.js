@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             let divContenido = document.getElementById('listEvent');
 
             for (let evento = 0; evento < events.length; evento++) {
-               // console.log(events[evento].id_event)
+                // console.log(events[evento].id_event)
 
                 let plantilla = `
-            <div class="row mx-4 my-2">
+                <div id="divi" class="row ml-2 my-2 p-2 border border-success rounded">
                 <div class="col-4">
                     <img class="img-fluid rounded" src="${events[evento].banner}" alt="nombre_evento">
                 </div>
@@ -25,16 +25,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     <h5>${events[evento].day}</h3>
                     <h3>${events[evento].title}</h3>
                     <h5>${events[evento].address}</h3>
+                    <h5>${events[evento].address}</h3>
                 </div>
             </div>`;
 
                 divContenido.innerHTML += plantilla;
                 divContenedor.appendChild(divContenido);
-               
+
             }
         })
     }
-    
+
     showEvents()
 
 })

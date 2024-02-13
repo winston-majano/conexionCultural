@@ -1,5 +1,10 @@
-.imgPrincipal{
-   
+.imgPrincipal {
+
     width: 100px;
-    
+
+}
+
+#divi {
+   
+    background: linear-gradient(#FFBE98, #BCB4FF);
 }

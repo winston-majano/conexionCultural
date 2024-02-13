@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(#FFBE98, #BCB4FF);
+    height: 100vh;
 }
 
 .login-container {
@@ -8,7 +9,6 @@ body {
     padding: 20px;
     margin-top: 50px;
     border: 1px solid #ddd;
-    background-color: #7FBC90;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
