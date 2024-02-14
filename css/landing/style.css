@@ -1,0 +1,19 @@
+.encabezado{
+    background: linear-gradient(#FFBE98, #BCB4FF);
+    height: 100vh;
+}
+
+.eventos{
+    background: linear-gradient(#FFBE98, #BCB4FF);
+    height: 100vh;
+}
+
+.reviews{
+    background: linear-gradient(#FFBE98, #BCB4FF);
+    height: 50vh;
+}
+
+.register{
+    background: linear-gradient(#FFBE98, #BCB4FF);
+    height: 75vh;
+}
