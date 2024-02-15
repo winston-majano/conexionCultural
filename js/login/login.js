@@ -16,5 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('La clave no es válida');
       return;
     }
+    window.location = "./dashboard/main.html";
+      
+
     this.submit();
   }
