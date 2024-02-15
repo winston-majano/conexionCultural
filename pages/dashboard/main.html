@@ -88,7 +88,7 @@
                     <div id="listEvent" class="col-12 mt-2 ">
 
                     </div>
-                 
+
 
 
                 </div>
@@ -133,11 +133,7 @@
 
                                 </div>
                                 <button type="button" class="btn btn-primary">Guardar</button>
-
                             </div>
-
-
-
                         </form>
 
 
@@ -153,10 +149,59 @@
                 <div id="myWalletContent" class="row    mx-4 py-3 ">
                     <h1>mi wallet</h1>
                 </div>
+
+
+
                 <!--inicio de creacion de eventos-->
                 <!--en esta seccion se cambiara para que el usuario teng un rol 1 como creador de eventos de lo contrario tendra rol 0-->
                 <div id="createEvents" class="row    mx-4 py-3 ">
-                    <h1>mostrando formulario de registro como creador de eventos</h1>
+                
+                    <form class="container text-center p-2">
+                        <h2 class="text text-primary">Crear Evento</h2>
+                        <section class="row align-items-center justify-content-lg-center">
+                            <article class="col-12 col-md-6 mb-2">
+                                <section class="form-floating">
+                                    <input class="form-control" name="title">
+                                    <label for="title">Titulo:</label>
+                                </section>
+                            </article>
+                            <article class="col-12 col-md-6 mb-2">
+                                <section class="form-floating">
+                                    <input class="form-control" name="organizador">
+                                    <label for="organizador">Organizador:</label>
+                                </section>
+                            </article>
+                            <article class="col-12 col-md-6 mb-2">
+                                <label for="day">Dia de celebración:</label>
+                                <input type="datetime-local" class="form-control" name="day" >
+                            </article>
+                            <article class="col-12 col-md-6 mb-2 mt-2">
+                                <section class="form-floating">
+                                    <input class="form-control" name="address">
+                                    <label for="address">Dirrección:</label>
+                                </section>
+                            </article>
+                            <article class="col-12 col-md-6 mb-2">
+                                <label for="banner">Imagen Principal</label>
+                                <input type="file" name="banner" class="form-control">
+                            </article>
+                            <article class="col-12 col-md-6 mb-2 mt-2">
+                                <section class="form-floating">
+                                    <select id="categories" name="categories" class="form-select">
+                                    </select>
+                                    <label name="categories">Seleccione la categoria:</label>
+                                </section>
+                            </article>
+                            
+                            
+                        </section>
+                        <article class="col-12  mt-3">
+                            <section class="form-floating">
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                                <label for="description">Descripcion:</label>
+                            </section>
+                        </article>
+                    </form>
                 </div>
 
             </main>
@@ -170,6 +215,7 @@
     <script src="../../js/bootstrap.js"></script>
     <script src="../../js/dashboard/mainDashboard.js"></script>
     <script type="module" src="../../js/dashboard/eventListMain.js"></script>
+    <script type="module" src="../events/useCreateEvent.js"></script>
 </body>
 
 </html>

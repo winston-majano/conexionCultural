@@ -5,6 +5,7 @@ function showCategories() {
   getCategories().then((categories) => {
     const fragment = document.createDocumentFragment()
     for (const category of categories) {
+      console.log(category)
       const categoryTag = document.createElement('option')
       categoryTag.value = category.name
       categoryTag.textContent = category.name
