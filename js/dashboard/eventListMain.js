@@ -1,7 +1,5 @@
 
 
-
-
 import { getEvents } from '../../pages/events/eventsService.js'
 
 document.addEventListener('DOMContentLoaded', (event) => {
