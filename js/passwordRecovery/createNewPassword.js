@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function validarFormulario(evento) {
     evento.preventDefault();
-    let clave = document.getElementById('password').value;
-    if (clave.length < 6) {
+    let newPassword = document.getElementById('newPassword').value;
+    if (newPassword.length < 6) {
       alert('La clave no es válida');
       return;
     }
-    let confirmPassword = document.getElementById('confirmPassword').value;
-  if (confirmPassword !== password) {
+    let repeatPassword = document.getElementById('repeatPassword').value;
+  if (repeatPassword !== newPassword) {
     alert('Las contraseñas no coinciden');
     return;
   }
