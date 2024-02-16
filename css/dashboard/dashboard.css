@@ -1,10 +1,20 @@
-.imgPrincipal {
 
-    width: 100px;
-
+.texto{
+    color: #43313E;
 }
 
-#divi {
+
+.imgPrincipal {
+    width: 100px;
+}
+
+.iconsSocial {
+   /*color: #43313E; */
+   color: #855CC2;
+}
+
+.fondo {
+  /*  background: linear-gradient(#FFBE98, #BCB4FF);     */
+  background-color: #4EC5B6;
    
-    background: linear-gradient(#FFBE98, #BCB4FF);
 }
