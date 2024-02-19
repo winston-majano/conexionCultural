@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     evento.preventDefault();
     let newPassword = document.getElementById('newPassword').value;
     if (newPassword.length < 6) {
-      alert('La clave no es válida');
+      alert('La clave no es válida, tiene que contener almenos 6 caracteres');
       return;
     }
     let repeatPassword = document.getElementById('repeatPassword').value;
