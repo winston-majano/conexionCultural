@@ -1,19 +1,37 @@
 .encabezado{
     background: linear-gradient(#FFBE98, #BCB4FF);
-    height: 100vh;
+    height: 100vh; 
 }
 
 .eventos{
     background: linear-gradient(#FFBE98, #BCB4FF);
-    height: 100vh;
+   height: 100vh;
 }
 
 .reviews{
     background: linear-gradient(#FFBE98, #BCB4FF);
-    height: 50vh;
+    height: 50vh; 
 }
 
 .register{
     background: linear-gradient(#FFBE98, #BCB4FF);
     height: 75vh;
+}
+
+
+.carousel-caption {
+    position: absolute; 
+    top: 100px; /* Cambiar bottom por top y los píxeles que necesites */
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    background-color: linear-gradient( rgba(5, 7, 75, 0.5), rgba(5, 7, 75, 0.5)); /* Añadir para conseguir el fondo con opacidad */
+}
+
+.bg-dark {
+    background-color: #855CC2!important;
+}
+
+footer{
+    background-color: #4EC5B6;
 }
