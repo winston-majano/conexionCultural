@@ -19,12 +19,13 @@
                 <nav class="navbar  navbar-expand-md  flex-md-column flex-row aling-items-center py-2 text-center stiky-top  px-2"
                     id="sidebar">
 
-                    <a class="navbar-brand  font-weight-bold texto display-1 mx-4"  href="#">Conexion Cultural</a>
+                    <a class="navbar-brand  font-weight-bold texto display-1 mx-4" href="#">Conexion Cultural</a>
                     <img class="imgPrincipal  img-fluid  d-none d-md-block shadow  my-5" src="../../assets/usuario.png"
                         alt="Winston Majano">
 
-                    <button class="navbar-toggler  px-1  " type="button" data-bs-toggle="collapse" data-bs-target="#nave"
-                        aria-controls="nave" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler  px-1  " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#nave" aria-controls="nave" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -60,7 +61,8 @@
                                 <i class="fa-brands fa-facebook fa-lg fs-1 iconsSocial"></i> </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#"> <i class="fa-brands fa-square-instagram fa-lg fs-1 iconsSocial"></i></a>
+                            <a class="nav-link " href="#"> <i
+                                    class="fa-brands fa-square-instagram fa-lg fs-1 iconsSocial"></i></a>
                         </li>
 
                     </ul>
@@ -119,6 +121,13 @@
                                             placeholder="Ingrese su nickname">
                                     </div>
                                     <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="birthday" class="form-label">Fecha Nacimiento:</label>
+                                        <input type="date" class="form-control" id="birthday"
+                                            placeholder="Ingrese su fecha de nacimiento">
+                                    </div>
+
+
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
                                         <label for="email" class="form-label">E-mail:</label>
                                         <input type="email" class="form-control" id="email"
                                             placeholder="Ingrese su e-mail">
@@ -128,6 +137,23 @@
                                         <label for="password" class="form-label">Contraseña:</label>
                                         <input type="password" class="form-control" id="password"
                                             placeholder="Ingrese su contraseña">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="tweeter" class="form-label">Tweeter:</label>
+                                        <input type="url" class="form-control" id="tweeter"
+                                            placeholder="Ingrese su perfil de tweeter">
+                                    </div>
+
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="facebook" class="form-label">Facebook:</label>
+                                        <input type="url" class="form-control" id="facebook"
+                                            placeholder="Ingrese su perfil de facebook">
+                                    </div>
+
+                                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                                        <label for="instagram" class="form-label">Instagram:</label>
+                                        <input type="url" class="form-control" id="instagram"
+                                            placeholder="Ingrese su perfil de instagram">
                                     </div>
 
                                 </div>
@@ -154,7 +180,7 @@
                 <!--inicio de creacion de eventos-->
                 <!--en esta seccion se cambiara para que el usuario teng un rol 1 como creador de eventos de lo contrario tendra rol 0-->
                 <div id="createEvents" class="row    mx-4 py-3 ">
-                
+
                     <form class="container text-center p-2">
                         <h2 class="text text-primary">Crear Evento</h2>
                         <section class="row align-items-center justify-content-lg-center">
@@ -172,7 +198,7 @@
                             </article>
                             <article class="col-12 col-md-6 mb-2">
                                 <label for="day">Dia de celebración:</label>
-                                <input type="datetime-local" class="form-control" name="day" >
+                                <input type="datetime-local" class="form-control" name="day">
                             </article>
                             <article class="col-12 col-md-6 mb-2 mt-2">
                                 <section class="form-floating">
@@ -191,8 +217,8 @@
                                     <label name="categories">Seleccione la categoria:</label>
                                 </section>
                             </article>
-                            
-                            
+
+
                         </section>
                         <article class="col-12  mt-3">
                             <section class="form-floating">
