@@ -85,8 +85,8 @@
                         <div class="row">
                             <form class="d-flex">
                                 <div class="col-9 col-md-8 col-lg-8 col-xl-8">
-                                    <input class="form-control" type="search" placeholder="Buscar Evento"
-                                        aria-label="Search">
+                                    <input id="searchEvent" class="form-control" type="search"
+                                        placeholder="Buscar Evento" aria-label="Search">
                                 </div>
                                 <div class="col-3 col-md-4 col-lg-4 col-xl-4">
                                     <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -140,7 +140,8 @@
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-6 mb-3">
                                     <label for="email" class="form-label">E-mail:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Ingrese su e-mail">
+                                    <input type="email" class="form-control" id="email" placeholder="Ingrese su e-mail"
+                                        autocomplete="email">
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-6 mb-3">
                                     <label for="password" class="form-label">Contraseña:</label>
@@ -222,35 +223,36 @@
                         <section class="row align-items-center justify-content-lg-center">
                             <article class="col-12 col-md-6 mb-2">
                                 <section class="form-floating">
-                                    <input class="form-control" name="title">
+                                    <input class="form-control" name="title" id="title">
                                     <label for="title">Titulo:</label>
                                 </section>
                             </article>
                             <article class="col-12 col-md-6 mb-2">
                                 <section class="form-floating">
-                                    <input class="form-control" name="organizador">
+                                    <input class="form-control" name="organizador" id="organizador">
                                     <label for="organizador">Organizador:</label>
                                 </section>
                             </article>
                             <article class="col-12 col-md-6 mb-2">
                                 <label for="day">Dia de celebración:</label>
-                                <input type="datetime-local" class="form-control" name="day">
+                                <input type="datetime-local" class="form-control" name="day" id="day">
                             </article>
                             <article class="col-12 col-md-6 mb-2 mt-2">
                                 <section class="form-floating">
-                                    <input class="form-control" name="address">
+                                    <input type="text" class="form-control" name="address" id="address"
+                                        autocomplete="address-level1">
                                     <label for="address">Dirrección:</label>
                                 </section>
                             </article>
                             <article class="col-12 col-md-6 mb-2">
                                 <label for="banner">Imagen Principal</label>
-                                <input type="file" name="banner" class="form-control">
+                                <input type="file" id="banner" name="banner" class="form-control">
                             </article>
                             <article class="col-12 col-md-6 mb-2 mt-2">
                                 <section class="form-floating">
                                     <select id="categories" name="categories" class="form-select">
                                     </select>
-                                    <label name="categories">Seleccione la categoria:</label>
+                                    <label name="categories" for="categories">Seleccione la categoria:</label>
                                 </section>
                             </article>
                         </section>
