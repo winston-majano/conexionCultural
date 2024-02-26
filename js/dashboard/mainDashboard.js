@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let myEventeContent = document.getElementById('myEventeContent');
     let myWalletContent = document.getElementById('myWalletContent');
     let createEvents = document.getElementById('createEvents');
-    
+
 
     eventsContent.style.display = "block";
     accauntContent.style.display = "none";
@@ -53,13 +53,13 @@ function show(id) {
             myWallet.style.display = "block";
             createEvent.style.display = "none";
             break;
-            case 5:
-                events.style.display = "none";
-                accaunt.style.display = "none";
-                myEvente.style.display = "none";
-                myWallet.style.display = "none";
-                createEvent.style.display = "block";
-                break;
+        case 5:
+            events.style.display = "none";
+            accaunt.style.display = "none";
+            myEvente.style.display = "none";
+            myWallet.style.display = "none";
+            createEvent.style.display = "block";
+            break;
         default:
             console.log("defaul expresions" + id);
     }
