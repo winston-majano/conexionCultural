@@ -26,7 +26,7 @@ function showEvents() {
 
         return events
     }).then((rest) => {
-
+        
         const clsAddButton = document.querySelectorAll('.clsAddButton')
         for (let i = 0; i < clsAddButton.length; i++) {
             const btnDetailEvent = document.createElement('button');
@@ -63,12 +63,7 @@ function showEvents() {
 
 }
 
-
-
-
-
 function main() {
-
     showEvents()
 }
 
